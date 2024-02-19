@@ -1,8 +1,5 @@
-package com.ri.groupingtypeanalysis;
+package com.wkd.groupingtypeanalysis;
 
-import com.ri.groupingtypeanalysis.repository.StudentRepository;
-import com.ri.groupingtypeanalysis.service.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,8 +1,8 @@
-package com.ri.groupingtypeanalysis.repository;
+package com.wkd.groupingtypeanalysis.repository;
 
-import com.ri.groupingtypeanalysis.entity.Record;
-import com.ri.groupingtypeanalysis.entity.Student;
-import com.ri.groupingtypeanalysis.entity.Subject;
+import com.wkd.groupingtypeanalysis.entity.Record;
+import com.wkd.groupingtypeanalysis.entity.Student;
+import com.wkd.groupingtypeanalysis.entity.Subject;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

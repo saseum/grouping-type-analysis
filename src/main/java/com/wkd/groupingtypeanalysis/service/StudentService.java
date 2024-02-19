@@ -1,7 +1,7 @@
-package com.ri.groupingtypeanalysis.service;
+package com.wkd.groupingtypeanalysis.service;
 
-import com.ri.groupingtypeanalysis.entity.Student;
-import com.ri.groupingtypeanalysis.repository.StudentRepository;
+import com.wkd.groupingtypeanalysis.entity.Student;
+import com.wkd.groupingtypeanalysis.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

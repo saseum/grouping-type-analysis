@@ -1,6 +1,6 @@
-package com.ri.groupingtypeanalysis.repository;
+package com.wkd.groupingtypeanalysis.repository;
 
-import com.ri.groupingtypeanalysis.entity.Student;
+import com.wkd.groupingtypeanalysis.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

@@ -1,4 +1,4 @@
-package com.ri.groupingtypeanalysis.entity;
+package com.wkd.groupingtypeanalysis.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
