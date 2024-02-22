@@ -1,6 +1,7 @@
 package com.wkd.dev.mapper;
 
 import com.wkd.dev.entity.Record;
+import com.wkd.dev.entity.Student;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,7 +63,7 @@ class RecordMapperTest {
             Map<String, Object> paramMap = new HashMap<>();
             paramMap.put("sbjGroup", subList);
             paramMap.put("count", subList.size());
-            int resultCount = recordMapper.getCountByContitionalGroup(paramMap);
+            int resultCount = recordMapper.getCountByConditionalGroup(paramMap);
 
             countList.add(Map.of("sbjGroup", subList, "count", resultCount));
         });
@@ -80,6 +81,45 @@ class RecordMapperTest {
         }
     }
 
+    @DisplayName("교과목 조합 그룹별 수강학생 목록 DB 조회 후 출력한다.")
+    @Test
+    void selectStudentsByContitionalSubjectGroup() {
+        String[] selectedSubjects = new String[] {"화법과 작문", "영미문학읽기", "한국지리", "사회문화", "물리학Ⅱ", "화학Ⅱ"};
+
+        List<List<String>> combList = combinationSubsets(selectedSubjects.length, 3, selectedSubjects);
+
+        List<Map<String, Object>> resultList = new ArrayList<>();
+
+        combList.forEach(subList -> {
+            Map<String, Object> paramMap = new HashMap<>();
+            paramMap.put("sbjGroup", subList);
+            paramMap.put("count", subList.size());
+
+            List<Student> selectedStudents = recordMapper.getStudentsByConditionalGroup(paramMap);
+            resultList.add(Map.of("sbjGroup", subList, "students", selectedStudents, "count", selectedStudents.size()));
+        });
+
+        resultList.sort(
+                Comparator.comparingInt((Map<String, Object> m) -> (Integer) m.get("count")
+                ).reversed()
+        );
+
+        for(Map<String, Object> map : resultList) {
+            List<Student> students = (List<Student>) map.get("students");
+            List<String> sbjGroup = (List<String>) map.get("sbjGroup");
+            int count = (Integer) map.get("count");
+
+            if(count > 0) {
+                System.out.println("*** " + sbjGroup.toString() + " = " + count);
+                for (int i = 0; i < students.size(); i++) {
+                    System.out.print(students.get(i).getSchool_number() + " " + students.get(i).getStu_name() + ", ");
+                    if(i != 0 && i % 5 == 0) System.out.println();
+
+                }
+                System.out.println("\n==================================================================================");
+            }
+        }
+    }
 
     // nCm Combination Function
     private List<List<String>> combinationSubsets(int n, int m, String[] subjects) {
