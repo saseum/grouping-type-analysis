@@ -1,51 +1,55 @@
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('기초', '국어', '일반', '화법과작문', 3);
+values ('기초', '국어', '일반', '화법과 작문', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('기초', '국어', '일반', '언어와매체', 3);
+insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
+values ('기초', '국어', '진로', '심화국어', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('기초', '수학', '일반', '미적분', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('기초', '수학', '진로', '경제수학', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('기초', '수학', '진로', '심화수학1', 3);
-insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('기초', '국어', '진로', '심화국어', 3);
+values ('기초', '수학', '진로', '심화수학Ⅰ', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('기초', '영어', '진로', '영미문학읽기', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '사회', '일반', '한국지리', 3);
+values ('탐구', '사회', '일반', '윤리와 사상', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '사회', '일반', '윤리와사상', 3);
+values ('탐구', '사회', '일반', '한국지리', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('탐구', '사회', '일반', '사회문화', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('탐구', '사회', '일반', '동아시아사', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '과학', '진로', '물리학2', 3);
+values ('탐구', '과학', '진로', '물리학Ⅱ', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '과학', '진로', '화학2', 3);
+values ('탐구', '과학', '진로', '화학Ⅱ', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '과학', '진로', '생명과학2', 3);
+values ('탐구', '과학', '진로', '생명과학Ⅱ', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '과학', '진로', '지구과학2', 3);
+values ('탐구', '과학', '진로', '지구과학Ⅱ', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '체육', '진로', '체육전공실기기초', 3);
+values ('탐구', '체육', '진로', '체육 전공실기 기초', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '예술', '진로', '미술전공실기', 3);
+values ('탐구', '예술', '진로', '미술 전공 실기', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '과학', '진로', '과학사', 2);
-insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('탐구', '과학', '진로', '융합과학탐구', 2);
+values ('탐구', '과학', '진로', '음악 전공 실기', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('탐구', '사회', '진로', '여행지리', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('탐구', '사회', '진로', '고전과윤리', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('생활교양', '제2외국어', '진로', '중국어회화1', 2);
+values ('탐구', '과학', '진로', '과학사', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('생활교양', '제2외국어', '진로', '일본어회화1', 2);
+values ('탐구', '과학', '진로', '융합과학탐구', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('생활교양', '기술가정', '진로', '정보과학', 2);
+insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
+values ('생활교양', '제2외국어', '진로', '중국어 회화1', 2);
+insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
+values ('생활교양', '제2외국어', '진로', '일본어 회화1', 2);
+insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
+values ('생활교양', '교양', '일반', '논술', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('생활교양', '교양', '일반', '논리학', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
@@ -54,8 +58,6 @@ insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('생활교양', '교양', '일반', '철학', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('생활교양', '교양', '일반', '보건', 2);
-insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
-values ('생활교양', '교양', '일반', '논술', 2);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
 values ('체육예술', '체육', '일반', '운동과건강', 3);
 insert into subject (sbj_area, sbj_group, sbj_type, sbj_name, unit)
@@ -176,8 +178,7 @@ VALUES ('홍길동1', '30101', 'M'),
        ('홍길동108', '30208', 'F'),
        ('홍길동109', '30209', 'M'),
        ('홍길동110', '30210', 'F'),
-       ('홍길동111', '30211', 'M');
-/*
+       ('홍길동111', '30211', 'M'),
        ('홍길동112', '30212', 'F'),
        ('홍길동113', '30213', 'M'),
        ('홍길동114', '30214', 'F'),
@@ -306,4 +307,4 @@ VALUES ('홍길동1', '30101', 'M'),
        ('홍길동237', '30337', 'M'),
        ('홍길동238', '30338', 'F'),
        ('홍길동239', '30339', 'M'),
-       ('홍길동240', '30340', 'F');*/
+       ('홍길동240', '30340', 'F');
