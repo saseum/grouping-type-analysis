@@ -13,7 +13,7 @@
         values (#{school_number}, #{sbj_name})
     </insert>
 
-    <select id="countByContitionalGroup" parameterType="Map" resultType="int">
+    <select id="getCountByContitionalGroup" parameterType="Map" resultType="int">
         SELECT COUNT(z.school_number)
         FROM (
             SELECT r.school_number

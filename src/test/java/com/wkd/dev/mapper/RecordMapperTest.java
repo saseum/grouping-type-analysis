@@ -101,5 +101,4 @@ class RecordMapperTest {
             combination.remove(combination.size() - 1);
         }
     }
-
 }
