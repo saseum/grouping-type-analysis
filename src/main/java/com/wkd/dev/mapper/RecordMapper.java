@@ -1,6 +1,7 @@
 package com.wkd.dev.mapper;
 
 import com.wkd.dev.entity.Record;
+import com.wkd.dev.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -14,5 +15,7 @@ public interface RecordMapper {
 
     void insertRecord(Record record);
 
-    int getCountByContitionalGroup(Map<String, Object> sbjGroup);
+    int getCountByConditionalGroup(Map<String, Object> sbjGroup);
+
+    List<Student> getStudentsByConditionalGroup(Map<String, Object> sbjGroup);
 }
